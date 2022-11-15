@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+  display: inline-grid;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+  display: inline-grid;
+  row-gap: 10px;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(109, 30, 30, 0.492);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
